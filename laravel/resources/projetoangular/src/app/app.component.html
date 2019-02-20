@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<mat-toolbar color="primary">
+  <span>Projeto: Laravel + Angular</span>
+</mat-toolbar>
+
+<mat-divider></mat-divider>
+
+<div fxLayout="row wrap" fxLayoutAlign="space-around none" >
+  <app-imagem *ngFor= "let p of posts" [post]='p'></app-imagem>
+</div>
+
+<button mat-fab color="primary" class="float-button" (click)="openModal()">
+  <mat-icon>add</mat-icon>
+</button>
